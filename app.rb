@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/' do
-    erb :super_hero
+    erb :'app/views/super_hero'
   end
 
   post '/teams' do
@@ -14,7 +14,7 @@ class App < Sinatra::Base
     end
 
     @ships = Ship.all
-    erb :new
+    erb :team
   end
 
 end
