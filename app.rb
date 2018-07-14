@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/' do
-    erb :super_hero
+    erb :'app/views/super_hero'
   end
 
   # post '/teams' do
