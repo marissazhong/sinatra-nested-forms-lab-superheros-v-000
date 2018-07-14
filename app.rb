@@ -14,7 +14,7 @@ class App < Sinatra::Base
     end
 
     @ships = Ship.all
-    erb :team
+    erb :new
   end
 
 end
